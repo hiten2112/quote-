@@ -1,88 +1,170 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>my try</title>
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <!--script for next button-->
+  <script>
+  $(function(){
+
+		var tab = 1;
+
+        $('#changetabbutton').click(function(e){
+            e.preventDefault();
+			if(tab>4){
+				tab = 1;
+			}else{
+				tab++;
+			}
+            $('#mytabs a[href="#'+tab+'"]').tab('show');
+        });
+
+    });
+  </script>
 </head>
 <style>
-img{
-  width: 50px;
-  height: 150px;
-
-
+body{
+  width: 500;
+  height: auto;
 }
-img.two{
-  width: 194px;
-  height: 50px;
-position: relative;
-
-}
-img.two:hover{
-  width: 220px;
-  height: 65px;
-
-
-}
-img.three{
-  width: 50px;
-  height: 50px;
-position: relative;
-
-}
-img.three:hover{
-  width: 65px;
-  height: 65px;
-
-
-}
-img:hover{
-  width: 65px;
-  height: 170px;
-
-  }
-  
 </style>
 <body>
-  <center>
-<img src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Random Quote Generator</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
 
-  <img src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
+    <!-- Nav tabs -->
+    <div class="well well-lg">
+    <ul id="mytabs" class="nav nav-tabs" role="tablist">
+      <li class="active">
+          <a href="#1" role="tab" data-toggle="tab">
+              <i class="fa fa-home"></i>
+          </a>
+      </li>
+      <li><a href="#2" role="tab" data-toggle="tab">
+          <i class="fa fa-user"></i>
+          </a>
+      </li>
+      <li>
+          <a href="#3" role="tab" data-toggle="tab">
+              <i class="fa fa-envelope"></i>
+          </a>
+      </li>
+      <li>
+          <a href="#4" role="tab" data-toggle="tab">
+              <i class="fa fa-envelope"></i>
+          </a>
+      </li>
+      <li>
+          <a href="#5" role="tab" data-toggle="tab">
+              <i class="fa fa-envelope"></i>
+          </a>
+      </li>
+    </ul>
 
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  &nbsp&nbsp&nbsp
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade active in cont" id="1">
+        <blockquote class="blockquote-reverse">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer>From WWF's website</footer>
+        </blockquote>
+        <div class="dropup">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-share"></span> Share
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><a href="#">facebook<span class="glyphicon glyphicon-fa-fa-facebook"></span></a></li>
+          <li><a href="#">Twitter<span class=""></span></a></li>
+          <li><a href="#">Instagram<span class=""></span></a></li>
 
+        </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade cont" id="2">
+        <blockquote class="blockquote-reverse">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer>From WWF's website</footer>
+        </blockquote>
+        <div class="dropup">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-share"></span> Share
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><a href="#">facebook<span class="glyphicon gl"></span></a></li>
+          <li><a href="#">Twitter<span class=""></span></a></li>
+          <li><a href="#">Instagram<span class=""></span></a></li>
 
-  <img src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-<br>
+        </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade cont" id="3">
+        <blockquote class="blockquote-reverse">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer>From WWF's website</footer>
+        </blockquote>
+        <div class="dropup">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-share"></span> Share
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><a href="#">facebook<span class="glyphicon gl"></span></a></li>
+          <li><a href="#">Twitter<span class=""></span></a></li>
+          <li><a href="#">Instagram<span class=""></span></a></li>
 
-<img class="two" src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  &nbsp&nbsp&nbsp
+        </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade cont" id="4">
+        <blockquote class="blockquote-reverse">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer>From WWF's website</footer>
+        </blockquote>
+        <div class="dropup">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-share"></span> Share
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><a href="#">facebook<span class="glyphicon gl"></span></a></li>
+          <li><a href="#">Twitter<span class=""></span></a></li>
+          <li><a href="#">Instagram<span class=""></span></a></li>
 
-  <img class="three" src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
+        </ul>
+        </div>
+      </div>
+       <div class="tab-pane fade cont" id="5">
+         <blockquote class="blockquote-reverse">
+           <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+           <footer>From WWF's website</footer>
+         </blockquote>
+         <div class="dropup">
+         <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="glyphicon glyphicon-share"></span> Share
+         </button>
+         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+           <li><a href="#">facebook<span class="glyphicon gl"></span></a></li>
+           <li><a href="#">Twitter<span class=""></span></a></li>
+           <li><a href="#">Instagram<span class=""></span></a></li>
 
-  <br>
+         </ul>
+         </div>
+      </div>
 
+    </div>
+  </div>
 
-
-  <img src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-  <img src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-
-    <img src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-
-      <img class="three" src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-
-
-
-  <img src="http://www.gettyimages.co.uk/gi-resources/images/Embed/new/embed2.jpg">
-</center>
+     <center><button type="button" id="changetabbutton" class="btn btn-success btn-lg ">Next Quote <span class="glyphicon glyphicon-arrow-right"></sapn></button></center>
+</div><br><br>
+<footer class="container-fluid text-center">
+  <p>Designed and created with <span class="glyphicon glyphicon-heart"></span> by Hiten Jangid </p>
+</footer>
 </body>
 </html>
